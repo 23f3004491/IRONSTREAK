@@ -1,0 +1,38 @@
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== VIRTUAL ENVIRONMENT =====
+.venv/
+venv/
+ENV/
+env/
+
+# ===== ENVIRONMENT VARIABLES =====
+.env
+
+# ===== DATABASE =====
+*.db
+*.sqlite
+*.sqlite3
+ironstreak.db
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== MISC =====
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
