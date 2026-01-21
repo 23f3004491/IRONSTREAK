@@ -2,7 +2,7 @@
 
 A full-stack discipline tracking app with **strict, irreversible streak rules**.
 
-## 🎯 Core Features
+## Core Features
 
 - **Multiple targets**: Create unlimited fixed-duration goals
 - **Daily check-ins**: Mark each day complete (or fail permanently)
@@ -11,7 +11,7 @@ A full-stack discipline tracking app with **strict, irreversible streak rules**.
 - **Locked targets**: No edits allowed once started
 - **2 users only**: Private app for you and one other person
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 **Backend**
 - FastAPI
@@ -26,7 +26,7 @@ A full-stack discipline tracking app with **strict, irreversible streak rules**.
 - Tailwind CSS
 - React
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 IRONSTREAK/
@@ -52,7 +52,7 @@ IRONSTREAK/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Backend Setup
 
@@ -108,7 +108,7 @@ npm run dev
 
 Frontend runs at: `http://localhost:3000`
 
-## 📊 Database Schema
+## Database Schema
 
 **Users**
 - id, email, hashed_password, created_at
@@ -122,7 +122,7 @@ Frontend runs at: `http://localhost:3000`
 **Streak**
 - target_id, current_streak, last_completed_date
 
-## 🔐 Authentication
+## Authentication
 
 Default credentials (development):
 - User 1: `me@example.com` / `password`
@@ -130,7 +130,7 @@ Default credentials (development):
 
 Change these in `.env` before deployment!
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### Auth
 - `POST /auth/login` - Get JWT token
@@ -147,7 +147,7 @@ Change these in `.env` before deployment!
 ### Streaks
 - `GET /streak/{target_id}` - Get streak info
 
-## ⚡ Business Rules (Backend Enforced)
+## Business Rules (Backend Enforced)
 
 1. **One check-in per day per target** (UTC timezone)
 2. **Must check in consecutively**: Missing any day → target fails
@@ -156,7 +156,7 @@ Change these in `.env` before deployment!
 5. **Success = complete all days**: Auto-marked when duration reached
 6. **Failed = permanent**: No recovery, must create new target
 
-## 🚢 Deployment
+## Deployment
 
 ### Backend (Railway)
 
@@ -178,17 +178,9 @@ Change these in `.env` before deployment!
    - `NEXT_PUBLIC_BACKEND_URL` (your Railway backend URL)
 4. Deploy
 
-## 🛠️ Development Notes
+## Development Notes
 
 - **TypeScript/React errors in frontend**: Run `npm install` to install dependencies
 - **Python import errors in backend**: Activate venv and install requirements
 - **Database connection**: Ensure PostgreSQL is running locally or use Railway
 - **CORS**: Backend allows requests from `FRONTEND_ORIGIN` only
-
-## 📜 License
-
-Private project - not for public distribution.
-
----
-
-Built with discipline 💪
