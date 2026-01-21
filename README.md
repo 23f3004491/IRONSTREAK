@@ -156,31 +156,3 @@ Change these in `.env` before deployment!
 5. **Success = complete all days**: Auto-marked when duration reached
 6. **Failed = permanent**: No recovery, must create new target
 
-## Deployment
-
-### Backend (Railway)
-
-1. Create new project on [Railway](https://railway.app)
-2. Add PostgreSQL database
-3. Deploy from GitHub or use Railway CLI
-4. Set environment variables:
-   - `DATABASE_URL` (auto-set by Railway)
-   - `JWT_SECRET`
-   - `FRONTEND_ORIGIN` (your Vercel URL)
-   - `USER1_EMAIL`, `USER1_PASSWORD`
-   - `USER2_EMAIL`, `USER2_PASSWORD`
-
-### Frontend (Vercel)
-
-1. Import GitHub repo to [Vercel](https://vercel.com)
-2. Set root directory to `frontend`
-3. Set environment variable:
-   - `NEXT_PUBLIC_BACKEND_URL` (your Railway backend URL)
-4. Deploy
-
-## Development Notes
-
-- **TypeScript/React errors in frontend**: Run `npm install` to install dependencies
-- **Python import errors in backend**: Activate venv and install requirements
-- **Database connection**: Ensure PostgreSQL is running locally or use Railway
-- **CORS**: Backend allows requests from `FRONTEND_ORIGIN` only
